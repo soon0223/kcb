@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+/* 모바일까지 ~767px */
+@media screen and (max-width: 767px) {
+    .sub_lnb_sec {font-size: 0.9em;}
+    .lnb_depth1 > a {letter-spacing: -1px;}
+
+
+}
+/* 태블릿 부터 768px~ */
+@media screen and (min-width: 768px) {
+    .sub_lnb > .home {width: 48px; }
+    .sub_lnb > li > a {height: 48px; line-height: 48px;}
+    .sub_lnb .material-icons-outlined {line-height: 48px;}
+    .lnb_depth1 {width: calc((100% - 48px) * 0.5);}
+    .lnb_depth1 > a {padding: 0 10px;}
+    .lnb_depth2 {top: 48px;}
+    .lnb_depth2 a {padding-left: 10px;}
+    
+    .sub_contents h2 {font-size: 1.5em;}
+    .sub_contents span {font-size: 1.1em;}
+    .sub_contents {padding:50px 0;}
+}
+/* 태블릿만 768px ~ 1279px */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .sub_visual {height: 200px;} 
+}
+/* pc 1280px~ */
+@media screen and (min-width: 1280px) {
+    #main_contents {padding-top: 100px;}
+    .sub_h2 {height: 205px; line-height: 205px; font-size: 2em !important;}
+    .sub_visual {height: 300px;}
+
+    /* LNB */
+    .sub_lnb_sec {border: 0; background-color:transparent;}
+    .sub_lnb_sec.fixed {position: fixed; left: 0; top: 100px; width: 100%;}
+    .sub_lnb {position: relative;  z-index: 1;}
+    .sub_lnb > li {float: none;}
+    .lnb_depth1 {width: 100%; max-width: none;}
+    .home {display: none;}
+    .lnb_main_wrap {display: none;}
+    .lnb_sub_wrap .lnb_sub_menu {display: none;}
+    .lnb_sub_wrap .lnb_depth2 {display: block; position: static; padding: 0;}
+    .lnb_depth2 {display: block; border: 0; background-color:transparent;}
+    .lnb_depth2 li {float: left; text-align: center; line-height: 50px;}
+    .lnb_depth2 > ul {width: 1110px; margin: auto; border: 0; background-color: #fff; box-shadow: 0 0 8px rgba(0,0,0,0.1); transition: 0.3s;}
+    .lnb_depth2 > .lnb_sub2 {width: 555px; margin: auto;}
+    .lnb_depth2 .lnb_sub1 li {width: calc(100% / 6);}
+    .lnb_depth2 .lnb_sub2 li {width: calc(100% / 3);}
+    .lnb_depth2 .lnb_sub3 li {width: calc(100% / 5);}
+    .lnb_depth2 .lnb_sub6 li {width: calc(100% / 6);}
+    .lnb_depth2 li:nth-child(even) {border: 1px solid #ddd; border-width: 0 1px;}
+    .lnb_depth2 li:last-child {border-right-width: 0;}
+    .lnb_depth2 a.active {background-color: #139da6; color: #fff;}
+    .lnb_depth2 a {padding: 0;}
+    .sub_visual {position: relative; top: -25px;}
+    
+    /* sub_contents_sec */
+    /* .sub_contents_sec {padding: 120px 0 180px;} */
+
+
+}
+
